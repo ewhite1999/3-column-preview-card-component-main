@@ -52,7 +52,6 @@ The main things I learnt/had to look up in this project are:
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding-bottom: 5em;
 }
 ```
 
