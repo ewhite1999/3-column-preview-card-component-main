@@ -16,6 +16,14 @@
   background-color: var(--basically_white);
   font-family: "Lexend Deca", sans-serif;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 5em;
+}
 main {
   color: var(--colour_paragraph);
   padding: 3em 1em 1em 1em;
@@ -88,4 +96,7 @@ main {
   #luxury {
     border-radius: 0 10px 10px 0;
   }
+}
+.attribution {
+  padding-top: 3em;
 }
