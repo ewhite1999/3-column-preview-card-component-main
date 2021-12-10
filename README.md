@@ -1,6 +1,6 @@
-# Frontend Mentor - NFT preview card component solution
+# Frontend Mentor - 3-column preview card component solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-using-vanilla-css-ui6phmAWN)
-- Live Site URL: [GitHub Pages](https://ewhite1999.github.io/nft-preview-card-component-main/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/3-column-preview-card-vanilla-css-TvlLvCgWQ)
+- Live Site URL: [GitHub Pages](https://ewhite1999.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
@@ -43,44 +43,16 @@ Users should be able to:
 
 The main things I learnt/had to look up in this project are:
 
-- Box sizing needs to be set like this to apply to everything:
+- A better way to center a page vertically:
 
 ```css
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-:root {
-  box-sizing: border-box;
-}
-```
-
-- How to center an image without absolute positioning:
-
-```css
-.container {
-  position: relative;
-}
-.absolute_center {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-```
-
-- How to overlay a colour on an image when overed:
-
-```css
-.img_container {
-  background-color: var(--overlay_colour);
-  line-height: 0;
-}
-.img_container img:hover {
-  opacity: 0.5;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 5em;
 }
 ```
 
