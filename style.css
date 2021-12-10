@@ -18,8 +18,10 @@
 }
 main {
   color: var(--colour_paragraph);
-  margin: 3em 1em 1em 1em;
+  padding: 3em 1em 1em 1em;
   min-width: 240px;
+  max-width: 416px;
+  margin: auto;
 }
 
 #sedan {
@@ -41,7 +43,7 @@ main {
   background-color: var(--basically_white);
   padding: 12px 25px;
   border-radius: 50px;
-  margin-right: auto;
+  display: inline-block;
 }
 #sedan .learn_more {
   color: var(--bright_orange);
@@ -55,12 +57,8 @@ main {
 
 .card {
   padding: 2.5em;
-  min-height: 50vh;
 }
-.card_body {
-  display: flex;
-  flex-direction: column;
-}
+
 .desc {
   line-height: 1.5;
   margin: 0 0 1.5em 0;
