@@ -26,12 +26,14 @@ main {
 
 #sedan {
   background-color: var(--bright_orange);
+  border-radius: 10px 10px 0 0;
 }
 #suvs {
   background-color: var(--dark_cyan);
 }
 #luxury {
   background-color: var(--very_dark_cyan);
+  border-radius: 0 0 10px 10px;
 }
 .title {
   color: var(--basically_white);
@@ -44,7 +46,9 @@ main {
   padding: 12px 25px;
   border-radius: 50px;
   display: inline-block;
+  border: 2px solid var(--basically_white);
 }
+
 #sedan .learn_more {
   color: var(--bright_orange);
 }
@@ -54,12 +58,34 @@ main {
 #luxury .learn_more {
   color: var(--very_dark_cyan);
 }
+.learn_more:hover {
+  background-color: inherit;
+  color: var(--basically_white) !important;
+}
 
 .card {
   padding: 2.5em;
+  max-width: 310px;
 }
 
 .desc {
   line-height: 1.5;
   margin: 0 0 1.5em 0;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    justify-content: center;
+    max-width: 2000px;
+  }
+  .learn_more {
+    margin-top: 4em;
+  }
+  #sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  #luxury {
+    border-radius: 0 10px 10px 0;
+  }
 }
